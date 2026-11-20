@@ -36,6 +36,8 @@ def verify_circuit_equivalence(
         raise EquivalenceCheckError(f"Qiskit required for equivalence checking: {exc}") from exc
 
     def _ensure_stdgates(s: str) -> str:
+        if "OPENQASM 2.0" in s:
+            return s
         if 'include "stdgates.inc";' not in s and "include 'stdgates.inc';" not in s:
             lines = s.split("\n")
             if lines and lines[0].strip().startswith("OPENQASM"):
@@ -43,13 +45,22 @@ def verify_circuit_equivalence(
             return 'OPENQASM 3.0;\ninclude "stdgates.inc";\n' + s
         return s
 
+    def _parse_circuit(s: str) -> QuantumCircuit:
+        if "OPENQASM 2.0" in s:
+            return QuantumCircuit.from_qasm_str(s)
+        cleaned = _ensure_stdgates(s)
+        try:
+            return qasm3.loads(cleaned)
+        except Exception:
+            return QuantumCircuit.from_qasm_str(cleaned)
+
     try:
-        qc_a = qasm3.loads(_ensure_stdgates(qasm_a))
+        qc_a = _parse_circuit(qasm_a)
     except Exception as exc:
         raise EquivalenceCheckError(f"Failed to parse Circuit A: {exc}") from exc
 
     try:
-        qc_b = qasm3.loads(_ensure_stdgates(qasm_b))
+        qc_b = _parse_circuit(qasm_b)
     except Exception as exc:
         raise EquivalenceCheckError(f"Failed to parse Circuit B: {exc}") from exc
 
