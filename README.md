@@ -45,6 +45,15 @@ docker compose up --build
 - **Backend API & Swagger Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
 - **Prometheus Metrics:** [http://localhost:8000/metrics](http://localhost:8000/metrics)
 
+### Prebuilt Container Images (GitHub Packages)
+
+Prebuilt multi-stage images are published automatically to GitHub Container Registry:
+
+```bash
+docker pull ghcr.io/bloop-group/quantum-compiler-explorer-backend:latest
+docker pull ghcr.io/bloop-group/quantum-compiler-explorer-frontend:latest
+```
+
 ---
 
 ## Local Development & Testing
