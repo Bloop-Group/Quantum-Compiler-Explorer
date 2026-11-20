@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line-swap {
+  background: rgba(244, 63, 94, 0.14);
+  border-left: 3px solid #f43f5e;
+}
+.line-native {
+  border-left: 3px solid transparent;
+}

@@ -1,0 +1,918 @@
+[
+  {
+    "id": "ibm_heron_r3_patch",
+    "name": "IBM Heron r3 (Heavy-Hex)",
+    "vendor": "IBM Quantum",
+    "architecture": "Heavy-Hexagonal Lattice (156Q chip)",
+    "full_chip_qubits": 156,
+    "patch_qubits": 12,
+    "basis_gates": [
+      "cz",
+      "id",
+      "rx",
+      "rz",
+      "rzz",
+      "sx",
+      "x"
+    ],
+    "two_qubit_gate": "cz",
+    "two_qubit_error_rate": 0.00215,
+    "single_qubit_error_rate": 0.00025,
+    "circuits_per_second": 4000,
+    "pricing_provider": "ibm_quantum",
+    "source_url": "https://quantum.cloud.ibm.com/computers?processorType=Heron&system=ibm_marrakesh",
+    "nodes": [
+      {
+        "id": 0,
+        "x": 105,
+        "y": 40
+      },
+      {
+        "id": 1,
+        "x": 195,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "x": 285,
+        "y": 40
+      },
+      {
+        "id": 3,
+        "x": 60,
+        "y": 112
+      },
+      {
+        "id": 4,
+        "x": 330,
+        "y": 112
+      },
+      {
+        "id": 5,
+        "x": 105,
+        "y": 184
+      },
+      {
+        "id": 6,
+        "x": 195,
+        "y": 184
+      },
+      {
+        "id": 7,
+        "x": 285,
+        "y": 184
+      },
+      {
+        "id": 8,
+        "x": 195,
+        "y": 245
+      },
+      {
+        "id": 9,
+        "x": 105,
+        "y": 295
+      },
+      {
+        "id": 10,
+        "x": 195,
+        "y": 295
+      },
+      {
+        "id": 11,
+        "x": 285,
+        "y": 295
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ]
+    ]
+  },
+  {
+    "id": "ibm_nighthawk_r2_patch",
+    "name": "IBM Nighthawk r2 (Square Lattice)",
+    "vendor": "IBM Quantum",
+    "architecture": "4-Degree Square Lattice (120Q+)",
+    "full_chip_qubits": 120,
+    "patch_qubits": 12,
+    "basis_gates": [
+      "cz",
+      "id",
+      "rx",
+      "rz",
+      "sx",
+      "x"
+    ],
+    "two_qubit_gate": "cz",
+    "two_qubit_error_rate": 0.00215,
+    "single_qubit_error_rate": 0.00025,
+    "circuits_per_second": 100000,
+    "pricing_provider": "ibm_quantum",
+    "source_url": "https://nand-research.com/ibm-quantum-nighthawk-r2-arrives-on-the-ibm-quantum-platform/",
+    "nodes": [
+      {
+        "id": 0,
+        "x": 55,
+        "y": 55
+      },
+      {
+        "id": 1,
+        "x": 147,
+        "y": 55
+      },
+      {
+        "id": 2,
+        "x": 239,
+        "y": 55
+      },
+      {
+        "id": 3,
+        "x": 331,
+        "y": 55
+      },
+      {
+        "id": 4,
+        "x": 55,
+        "y": 150
+      },
+      {
+        "id": 5,
+        "x": 147,
+        "y": 150
+      },
+      {
+        "id": 6,
+        "x": 239,
+        "y": 150
+      },
+      {
+        "id": 7,
+        "x": 331,
+        "y": 150
+      },
+      {
+        "id": 8,
+        "x": 55,
+        "y": 245
+      },
+      {
+        "id": 9,
+        "x": 147,
+        "y": 245
+      },
+      {
+        "id": 10,
+        "x": 239,
+        "y": 245
+      },
+      {
+        "id": 11,
+        "x": 331,
+        "y": 245
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        11
+      ]
+    ]
+  },
+  {
+    "id": "ionq_forte_clique",
+    "name": "IonQ Forte (All-to-All)",
+    "vendor": "IonQ (via AWS Braket)",
+    "architecture": "All-to-All Trapped-Ion (36Q)",
+    "full_chip_qubits": 36,
+    "patch_qubits": 12,
+    "basis_gates": [
+      "gpi",
+      "gpi2",
+      "ms"
+    ],
+    "two_qubit_gate": "ms",
+    "two_qubit_error_rate": 0.0005,
+    "single_qubit_error_rate": 0.0001,
+    "circuits_per_second": 500,
+    "pricing_provider": "aws_braket_ionq_forte",
+    "source_url": "https://docs.ionq.com/features/getting-started-with-native-gates",
+    "nodes": [
+      {
+        "id": 0,
+        "x": 195,
+        "y": 40
+      },
+      {
+        "id": 1,
+        "x": 258,
+        "y": 57
+      },
+      {
+        "id": 2,
+        "x": 303,
+        "y": 102
+      },
+      {
+        "id": 3,
+        "x": 320,
+        "y": 165
+      },
+      {
+        "id": 4,
+        "x": 303,
+        "y": 227
+      },
+      {
+        "id": 5,
+        "x": 258,
+        "y": 273
+      },
+      {
+        "id": 6,
+        "x": 195,
+        "y": 290
+      },
+      {
+        "id": 7,
+        "x": 133,
+        "y": 273
+      },
+      {
+        "id": 8,
+        "x": 87,
+        "y": 228
+      },
+      {
+        "id": 9,
+        "x": 70,
+        "y": 165
+      },
+      {
+        "id": 10,
+        "x": 87,
+        "y": 102
+      },
+      {
+        "id": 11,
+        "x": 132,
+        "y": 57
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        11
+      ]
+    ]
+  },
+  {
+    "id": "iqm_garnet_grid",
+    "name": "IQM Garnet (2D Grid)",
+    "vendor": "IQM (via AWS Braket)",
+    "architecture": "2D Square Grid (20Q)",
+    "full_chip_qubits": 20,
+    "patch_qubits": 12,
+    "basis_gates": [
+      "cz",
+      "rx",
+      "ry",
+      "rz"
+    ],
+    "two_qubit_gate": "cz",
+    "two_qubit_error_rate": 0.003,
+    "single_qubit_error_rate": 0.0004,
+    "circuits_per_second": 2000,
+    "pricing_provider": "aws_braket_iqm_garnet",
+    "source_url": "https://aws.amazon.com/braket/pricing/",
+    "nodes": [
+      {
+        "id": 0,
+        "x": 55,
+        "y": 55
+      },
+      {
+        "id": 1,
+        "x": 147,
+        "y": 55
+      },
+      {
+        "id": 2,
+        "x": 239,
+        "y": 55
+      },
+      {
+        "id": 3,
+        "x": 331,
+        "y": 55
+      },
+      {
+        "id": 4,
+        "x": 55,
+        "y": 150
+      },
+      {
+        "id": 5,
+        "x": 147,
+        "y": 150
+      },
+      {
+        "id": 6,
+        "x": 239,
+        "y": 150
+      },
+      {
+        "id": 7,
+        "x": 331,
+        "y": 150
+      },
+      {
+        "id": 8,
+        "x": 55,
+        "y": 245
+      },
+      {
+        "id": 9,
+        "x": 147,
+        "y": 245
+      },
+      {
+        "id": 10,
+        "x": 239,
+        "y": 245
+      },
+      {
+        "id": 11,
+        "x": 331,
+        "y": 245
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        11
+      ]
+    ]
+  },
+  {
+    "id": "linear_chain_12",
+    "name": "1D Linear Chain (Baseline)",
+    "vendor": "Rigetti Cepheus Rate",
+    "architecture": "1D Nearest-Neighbor Chain (12Q)",
+    "full_chip_qubits": 12,
+    "patch_qubits": 12,
+    "basis_gates": [
+      "cx",
+      "rz",
+      "sx",
+      "x"
+    ],
+    "two_qubit_gate": "cx",
+    "two_qubit_error_rate": 0.004,
+    "single_qubit_error_rate": 0.0005,
+    "circuits_per_second": 3000,
+    "pricing_provider": "aws_braket_rigetti_cepheus",
+    "source_url": "https://quantumcomputingcost.com/",
+    "nodes": [
+      {
+        "id": 0,
+        "x": 45,
+        "y": 105
+      },
+      {
+        "id": 1,
+        "x": 105,
+        "y": 105
+      },
+      {
+        "id": 2,
+        "x": 165,
+        "y": 105
+      },
+      {
+        "id": 3,
+        "x": 225,
+        "y": 105
+      },
+      {
+        "id": 4,
+        "x": 285,
+        "y": 105
+      },
+      {
+        "id": 5,
+        "x": 345,
+        "y": 105
+      },
+      {
+        "id": 6,
+        "x": 345,
+        "y": 225
+      },
+      {
+        "id": 7,
+        "x": 285,
+        "y": 225
+      },
+      {
+        "id": 8,
+        "x": 225,
+        "y": 225
+      },
+      {
+        "id": 9,
+        "x": 165,
+        "y": 225
+      },
+      {
+        "id": 10,
+        "x": 105,
+        "y": 225
+      },
+      {
+        "id": 11,
+        "x": 45,
+        "y": 225
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ]
+    ]
+  }
+]

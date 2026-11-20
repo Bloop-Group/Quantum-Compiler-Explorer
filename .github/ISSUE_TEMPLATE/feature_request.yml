@@ -1,0 +1,31 @@
+name: Feature Request
+description: Propose a new compiler, hardware topology, or visualization feature
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      description: Is your feature request related to a problem or developer workflow?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe what you would like to see implemented
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Compiler Adapter (Qiskit, pytket, Cirq, etc.)
+        - Hardware Topology / Calibration
+        - Pricing Model
+        - Visualization / UI
+        - Observability & DevOps
+    validations:
+      required: true

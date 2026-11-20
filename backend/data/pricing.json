@@ -1,0 +1,60 @@
+{
+  "verified_date": "2026-11-07",
+  "sources": [
+    "https://quantumcomputingcost.com/",
+    "https://aws.amazon.com/braket/pricing/",
+    "https://learn.microsoft.com/en-us/azure/quantum/pricing"
+  ],
+  "providers": {
+    "ibm_quantum": {
+      "model": "per_minute",
+      "tiers": {
+        "open": {
+          "label": "IBM Open Plan (10 min/mo free)",
+          "rate_per_min": 0.0
+        },
+        "payg": {
+          "label": "IBM Pay-As-You-Go ($96/min)",
+          "rate_per_min": 96.0
+        },
+        "flex": {
+          "label": "IBM Flex ($72/min, 400 min/yr)",
+          "rate_per_min": 72.0
+        },
+        "premium": {
+          "label": "IBM Premium ($48/min, 5200 min/yr)",
+          "rate_per_min": 48.0
+        }
+      },
+      "min_billable_seconds": 1.0
+    },
+    "aws_braket_ionq_forte": {
+      "model": "per_task_plus_shot",
+      "label": "AWS Braket - IonQ Forte",
+      "per_task_usd": 0.3,
+      "per_shot_usd": 0.08
+    },
+    "aws_braket_iqm_garnet": {
+      "model": "per_task_plus_shot",
+      "label": "AWS Braket - IQM Garnet",
+      "per_task_usd": 0.3,
+      "per_shot_usd": 0.00145
+    },
+    "aws_braket_rigetti_cepheus": {
+      "model": "per_task_plus_shot",
+      "label": "AWS Braket - Rigetti Cepheus",
+      "per_task_usd": 0.3,
+      "per_shot_usd": 0.000425
+    },
+    "azure_quantum_rigetti": {
+      "model": "per_minute",
+      "tiers": {
+        "standard": {
+          "label": "Azure Quantum - Rigetti Cepheus ($120/min)",
+          "rate_per_min": 120.0
+        }
+      },
+      "min_billable_seconds": 0.01
+    }
+  }
+}

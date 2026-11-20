@@ -1,0 +1,36 @@
+name: Bug Report
+description: File a bug report for Quantum Compiler Explorer
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting an issue! Please describe the problem clearly.
+  - type: textarea
+    id: circuit
+    attributes:
+      label: OpenQASM 3 Circuit
+      description: Paste the circuit that reproduced the bug
+      render: qasm
+    validations:
+      required: false
+  - type: input
+    id: target
+    attributes:
+      label: Target Chip & Compiler
+      description: e.g. IBM Heron r3 with Qiskit O2
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Describe the error message, incorrect diff, or crash
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true

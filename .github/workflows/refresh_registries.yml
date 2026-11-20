@@ -1,0 +1,22 @@
+name: Scheduled Hardware & Pricing Registry Refresh
+
+on:
+  schedule:
+    # Run every Monday at 04:00 UTC
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+jobs:
+  verify-and-refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify registry integrity
+        run: python3 scripts/verify_registries.py
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+      - name: Run verification test suite
+        run: pytest backend/tests -v
