@@ -1,6 +1,6 @@
 # Quantum Compiler Explorer
 
-[![CI](https://github.com/quantum-compiler-explorer/quantum-compiler-explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/quantum-compiler-explorer/quantum-compiler-explorer/actions)
+[![CI](https://github.com/Bloop-Group/Quantum-Compiler-Explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/Bloop-Group/Quantum-Compiler-Explorer/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![React 18](https://img.shields.io/badge/react-18-blue.svg)](https://react.dev/)
