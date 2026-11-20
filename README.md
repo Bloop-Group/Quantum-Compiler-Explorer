@@ -116,11 +116,7 @@ npm run dev
 ## Documentation
 
 - [`docs/THESIS.md`](docs/THESIS.md): Full motivation and vision for a Godbolt-grade Quantum Compiler Explorer.
-- [`docs/TECH_SPEC_AND_PLAN.md`](docs/TECH_SPEC_AND_PLAN.md): Technical specification, data structures, and coverage report.
-- [`docs/RESEARCH_NOTES.md`](docs/RESEARCH_NOTES.md): Verified compiler APIs, 2026 QPU topologies, and cloud pricing formulas.
-- [`docs/PLAN_MVP_100.md`](docs/PLAN_MVP_100.md): Roadmap for 100% MVP coverage.
-- [`docs/PLAN_PRODUCTION_100.md`](docs/PLAN_PRODUCTION_100.md): Production hardening specifications.
-
+  
 ---
 
 ## Contributing & Security
