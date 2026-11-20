@@ -50,8 +50,8 @@ docker compose up --build
 Prebuilt multi-stage images are published automatically to GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/bloop-group/quantum-compiler-explorer-backend:latest
-docker pull ghcr.io/bloop-group/quantum-compiler-explorer-frontend:latest
+docker pull ghcr.io/bloop-group/qce-backend:latest
+docker pull ghcr.io/bloop-group/qce-frontend:latest
 ```
 
 ---

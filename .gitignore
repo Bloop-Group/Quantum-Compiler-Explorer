@@ -5,3 +5,6 @@ __pycache__/
 .pytest_cache/
 .coverage
 .env
+PLAN_*
+RESEARCH_*
+TECH_*
